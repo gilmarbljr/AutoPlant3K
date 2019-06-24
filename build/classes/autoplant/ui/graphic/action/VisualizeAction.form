@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLNitrogenio" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="nitrogenio" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="110" max="32767" attributes="0"/>
+                      <Component id="jLTN" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="totalNitrogenio" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLCalcio" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="calcio" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jLTC" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="totalCalcio" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLPotassio" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="potassio" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jLTP" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="totalPotassio" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLUmidade" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="umidade" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="totalUmidade" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLSemente" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="semente" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLLuminosidade" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="luminosidade" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="nomeCultivo" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="nomeCultivo" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLSemente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="semente" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLLuminosidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="luminosidade" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLUmidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="umidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="totalUmidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLPotassio" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="potassio" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="totalPotassio" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLTP" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLCalcio" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="calcio" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="totalCalcio" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLTC" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLNitrogenio" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="nitrogenio" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="totalNitrogenio" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLTN" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="103" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="nomeCultivo">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Nome do Cultivo"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLSemente">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Semente:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="semente">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="float"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLLuminosidade">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Luminosidade:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="luminosidade">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="float"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLUmidade">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Umidade do Solo:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="umidade">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="float"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLPotassio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Concentra&#xe7;&#xe3;o de Pot&#xe1;ssio:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="potassio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="float"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLCalcio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Concentra&#xe7;&#xe3;o de C&#xe1;lcio:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="calcio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="float"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLNitrogenio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Concentra&#xe7;&#xe3;o de Nitrogenio:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="nitrogenio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="float"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="totalUmidade">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="float"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Volume Irrigado:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="totalPotassio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="float"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLTP">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Qtd Fertilizante:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="totalCalcio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="float"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLTC">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Qtd Fertilizante:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="totalNitrogenio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="float"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLTN">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Qtd Fertilizante:"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
