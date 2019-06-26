@@ -16,8 +16,8 @@ public abstract class JDBC {
     private final String DRIVER = "com.mysql.jdbc.Driver";
     private final String SERVER = "localhost";
     private final String BANCO = "autoplant";
-    private final String USER = "root";
-    private final String SENHA = "!-G0256-!";
+    private final String USER = "autoplant";
+    private final String SENHA = "autoplant";
     private final String URL;
 
     public JDBC() {
