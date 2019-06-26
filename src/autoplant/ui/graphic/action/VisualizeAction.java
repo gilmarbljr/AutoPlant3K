@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package autoplant.ui.graphic.action;
 
 import autoplant.business.domain.UnidadeDeCultivo;
@@ -21,7 +16,9 @@ public class VisualizeAction extends javax.swing.JFrame {
         this.uc = uc;
         
         initComponents();
-        initData();
+        if (uc != null){
+            initData();
+        }
     }
 
     /**

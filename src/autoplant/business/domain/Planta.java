@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package autoplant.business.domain;
 
 import autoplant.business.BusinessException;
@@ -30,6 +25,16 @@ public class Planta {
         this.teorNitrogenio = ZERO;
         this.nivelLuminosidade = ZERO;
         this.tamanho = ZERO;
+    }
+
+    public Planta(String semente, Float umidadeDoSolo, Float teorPotassio, Float teorNitrogenio, Float teorCalcio, Float nivelLuminosidade, Float tamanho) {
+        this.semente = semente;
+        this.umidadeDoSolo = umidadeDoSolo;
+        this.teorPotassio = teorPotassio;
+        this.teorNitrogenio = teorNitrogenio;
+        this.teorCalcio = teorCalcio;
+        this.nivelLuminosidade = nivelLuminosidade;
+        this.tamanho = tamanho;
     }
 
     public Float getNivelLuminosidade() {

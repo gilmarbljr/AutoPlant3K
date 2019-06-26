@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package autoplant.business.domain;
 
 import autoplant.business.BusinessException;
@@ -22,7 +17,7 @@ public class UnidadeDeCultivo {
     private Float metaTamanho;
     private Planta planta;
 
-    public UnidadeDeCultivo(Integer id, String nomeCultivo, String nomeSemente, Float metaPotassio, Float metaCalcio, Float metaNitrogenio, Float metaUmidade, Float metaLuminosidade) throws BusinessException{
+    public UnidadeDeCultivo(Integer id, String nomeCultivo, Float metaPotassio, Float metaCalcio, Float metaNitrogenio, Float metaUmidade, Float metaLuminosidade, Planta planta) throws BusinessException{
         this.id = id;
         setNomeCultivo(nomeCultivo);
         this.metaLuminosidade = metaLuminosidade;
@@ -31,7 +26,7 @@ public class UnidadeDeCultivo {
         this.metaNitrogenio = metaNitrogenio;
         this.metaUmidade = metaUmidade;
         this.metaTamanho = Float.parseFloat("1");
-        newPlanta(nomeSemente);
+        this.planta = planta;
     }
 
     public Float getMetaCalcio() {
@@ -99,10 +94,6 @@ public class UnidadeDeCultivo {
             throw new BusinessException("exception.invalid.nomecultivo");
         }
         this.nomeCultivo = nomeCultivo;
-    }
-    
-    private void newPlanta(String semente) throws BusinessException{
-        this.planta = new Planta(semente);
     }
     
     @Override

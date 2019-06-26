@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package autoplant.ui.graphic.action;
 
 import autoplant.business.OperationService;
@@ -105,15 +100,22 @@ public class CultivosAction extends javax.swing.JFrame {
 
     private void initData(){
         DefaultListModel DLM = new DefaultListModel();
-        for (UnidadeDeCultivo uc : operationService.getAllUnidadeDeCultivo()){
-            DLM.addElement(uc);
+        try {
+            for (UnidadeDeCultivo uc : operationService.getAllUnidadeDeCultivo()){
+                DLM.addElement(uc);
+            }
+        } catch (Exception e) {
         }
         listCultivos.setModel(DLM);
     }
     
     private void getCultivosByID(){
         DefaultListModel DLM = new DefaultListModel();
-        UnidadeDeCultivo uc = operationService.getUnidadeDeCultivoByID(getInteger());
+        UnidadeDeCultivo uc = null;
+        try {
+             uc = operationService.getUnidadeDeCultivoByID(getInteger());
+        } catch (Exception e) {
+        }
         if(uc == null){
             initData();
             idCultivo.setText("ID do Cultivo");
