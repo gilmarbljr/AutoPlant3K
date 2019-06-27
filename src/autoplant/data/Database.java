@@ -51,7 +51,7 @@ public class Database {
     
     private void initData(){
         try {
-            //Users
+            /*//Users
             Employee employee = new Employee("Gilmar", "Junior", "gbljunior", "123", new Date());
             save(employee);
             
@@ -63,7 +63,7 @@ public class Database {
             UnidadeDeCultivo uc2 = new UnidadeDeCultivo(++oldID, "Plantinha"+oldID, "Goiaba", meta, meta, meta, meta, meta);
             save(uc2);
             UnidadeDeCultivo uc3 = new UnidadeDeCultivo(++oldID, "Plantinha"+oldID, "Goiaba", meta, meta, meta, meta, meta);
-            save(uc3);
+            save(uc3);*/
         } catch (Exception e) {
         }
     }

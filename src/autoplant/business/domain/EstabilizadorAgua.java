@@ -1,19 +1,18 @@
 package autoplant.business.domain;
 
-import java.util.ArrayList;
-
-public class EstabilizadorAgua extends Observer{
-    public static final String WATER = "Water";
-    private ArrayList<Float> planoIrrigacao;
+public class EstabilizadorAgua extends Observer{ 
     
-    public void ajustaIrrigacao(Float deficit){
+    private void ajustaIrrigacao(UnidadeDeCultivo uc){
+        Planta planta = uc.getPlanta();
         
+        planta.setUmidadeDoSolo(planta.getUmidadeDoSolo()+calculaDefict(uc.getMetaUmidade(), planta.getUmidadeDoSolo()));
+        uc.setPlanta(planta);
     }
 
     @Override
-    public void notify(String aspectDeficit, Float deficit) {
-        if(aspectDeficit.equals(WATER)){
-            ajustaIrrigacao(deficit);
+    public void notify(UnidadeDeCultivo uc) {
+        if (uc.isChangedDefictWater()) {
+        	ajustaIrrigacao(uc);
         }
     }
 }

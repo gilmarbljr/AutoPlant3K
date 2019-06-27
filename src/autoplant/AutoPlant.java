@@ -2,6 +2,7 @@ package autoplant;
 
 import autoplant.business.AccountManagementService;
 import autoplant.business.OperationService;
+import autoplant.business.domain.EstabilizadorAgua;
 import autoplant.business.domain.OperationLocation;
 import autoplant.business.impl.AccountManagementServiceImpl;
 import autoplant.business.impl.OperationServiceImpl;

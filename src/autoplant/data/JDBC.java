@@ -10,7 +10,7 @@ public abstract class JDBC {
     private Connection connection;
     private ResultSet resultSet;
     private final String DRIVER = "com.mysql.jdbc.Driver";
-    private final String SERVER = "localhost";
+    private final String SERVER = "gbljunior.ddns.net:3306";
     private final String BANCO = "autoplant";
     private final String USER = "autoplant";
     private final String SENHA = "autoplant";

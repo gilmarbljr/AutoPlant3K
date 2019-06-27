@@ -48,6 +48,7 @@ public class OperationServiceImpl implements OperationService{
         uc.setMetaNitrogenio(nitrogenio);
         uc.setMetaUmidade(umidade);
         uc.setMetaLuminosidade(luminosidade);
+        JDBCUtil.getPlantaDAO().update(uc.getPlanta(), uc.getId());
         JDBCUtil.getUnidadeCultivoDAO().update(uc);
         return uc;
     }

@@ -67,4 +67,25 @@ public class Planta {
         }
         this.semente = semente;
     }
+
+	public void setUmidadeDoSolo(Float umidadeDoSolo) {
+		this.umidadeDoSolo = umidadeDoSolo;
+	}
+
+	public void setTeorPotassio(Float teorPotassio) {
+		this.teorPotassio = teorPotassio;
+	}
+
+	public void setTeorNitrogenio(Float teorNitrogenio) {
+		this.teorNitrogenio = teorNitrogenio;
+	}
+
+	public void setTeorCalcio(Float teorCalcio) {
+		this.teorCalcio = teorCalcio;
+	}
+
+	public void setNivelLuminosidade(Float nivelLuminosidade) {
+		this.nivelLuminosidade = nivelLuminosidade;
+	}
+    
 }

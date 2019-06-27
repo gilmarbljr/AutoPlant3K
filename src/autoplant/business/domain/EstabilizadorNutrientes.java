@@ -4,21 +4,30 @@ import java.util.LinkedList;
 
 public class EstabilizadorNutrientes extends Observer{
     
-    public static final String NUTRIENT = "Nutrient";
-    private LinkedList<Fertilizante> listaFertilizantes;
-    
-    public void estabilizaSolo(Float deficitN, Float deficitK, Float deficitCa){
-        
+    private void estabilizaCalcio(UnidadeDeCultivo uc) {
+    	Planta planta = uc.getPlanta();
+    	planta.setTeorCalcio(planta.getTeorCalcio()+calculaDefict(uc.getMetaCalcio(), planta.getTeorCalcio()));
+    	uc.setPlanta(planta);
     }
     
-    public void addFertilizante(Fertilizante newFertilizante){
-        this.listaFertilizantes.add(newFertilizante);
+    private void estabilizaPotassio(UnidadeDeCultivo uc) {
+    	Planta planta = uc.getPlanta();
+    	planta.setTeorPotassio(planta.getTeorPotassio()+calculaDefict(uc.getMetaPotassio(), planta.getTeorPotassio()));
+    	uc.setPlanta(planta);
+    }
+    
+    public void estabilizaNitrogenio(UnidadeDeCultivo uc) {
+    	Planta planta = uc.getPlanta();
+    	planta.setTeorNitrogenio(planta.getTeorNitrogenio()+calculaDefict(uc.getMetaNitrogenio(), planta.getTeorNitrogenio()));
+    	uc.setPlanta(planta);
     }
 
     @Override
-    public void notify(String aspectDeficit, Float deficit) {
-        if(aspectDeficit.equals(NUTRIENT)){
-            estabilizaSolo(deficit, deficit, deficit);
+    public void notify(UnidadeDeCultivo uc) {
+        if(uc.isChangedDefictNutrient()) {
+        	estabilizaCalcio(uc);
+        	estabilizaNitrogenio(uc);
+        	estabilizaPotassio(uc);
         }
     }
     

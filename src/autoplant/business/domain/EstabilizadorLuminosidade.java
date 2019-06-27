@@ -1,20 +1,18 @@
 package autoplant.business.domain;
 
-import java.util.ArrayList;
-
 public class EstabilizadorLuminosidade extends Observer{
-    public static final String LUMINOSITY = "Luminosity";
-    private ArrayList<Float> planoLuminosidade;
 
     @Override
-    public void notify(String aspectDeficit, Float deficit) {
-        if(aspectDeficit.equals(LUMINOSITY)){
-            ajustaLuminosidade(deficit);
+    public void notify(UnidadeDeCultivo uc) {
+        if(uc.isChangedDefictLuminosidade()) {
+        	ajustaLuminosidade(uc);
         }
     }
     
-    public void ajustaLuminosidade(Float deficit){
-        
+    public void ajustaLuminosidade(UnidadeDeCultivo uc){
+        Planta planta = uc.getPlanta();
+        planta.setNivelLuminosidade(calculaDefict(uc.getMetaLuminosidade(), planta.getNivelLuminosidade()));
+        uc.setPlanta(planta);
     }
     
 }

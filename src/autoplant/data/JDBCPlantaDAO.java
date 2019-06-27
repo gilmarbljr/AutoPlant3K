@@ -2,6 +2,7 @@ package autoplant.data;
 
 import autoplant.business.BusinessException;
 import autoplant.business.domain.Planta;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -84,6 +85,36 @@ public class JDBCPlantaDAO extends JDBC {
             throw new BusinessException(e.getMessage());
         }
         return n;
+    }
+    
+    public void update(Planta planta, Integer id) throws BusinessException{
+        String sql = "update planta set "+
+                "teorPotassio = ?, "+
+                "teorCalcio = ?, "+
+                "teorNitrogenio = ?, "+
+                "umidadeDoSolo = ?, "+
+                "nivelLuminosidade = ? "+
+                "where plantaId = ?";
+        
+        try {
+            Connection c = openConnection();
+            PreparedStatement ps = null;
+            ps = c.prepareStatement(sql);
+            
+            ps.setFloat(1, planta.getTeorPotassio());
+            ps.setFloat(2, planta.getTeorCalcio());
+            ps.setFloat(3, planta.getTeorNitrogenio());
+            ps.setFloat(4, planta.getUmidadeDoSolo());
+            ps.setFloat(5, planta.getNivelLuminosidade());
+            ps.setInt(6, id);
+            
+            ps.execute();
+            
+            disconnect();
+            
+        } catch (SQLException e) {
+            throw new BusinessException(e.getMessage());
+        }
     }
 
 }
