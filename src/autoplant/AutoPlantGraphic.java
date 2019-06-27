@@ -5,10 +5,6 @@ import autoplant.business.OperationService;
 import autoplant.business.domain.OperationLocation;
 import autoplant.ui.graphic.AutoPlantGraphicInterface;
 
-/**
- *
- * @author gbljunior
- */
 class AutoPlantGraphic extends AutoPlant {
 
     @Override

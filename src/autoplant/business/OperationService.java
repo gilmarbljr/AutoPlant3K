@@ -3,10 +3,6 @@ package autoplant.business;
 import autoplant.business.domain.UnidadeDeCultivo;
 import java.util.List;
 
-/**
- *
- * @author gbljunior
- */
 public interface OperationService {
     public List<UnidadeDeCultivo> getAllUnidadeDeCultivo() throws BusinessException;
     public UnidadeDeCultivo getUnidadeDeCultivoByID(Integer id) throws BusinessException;

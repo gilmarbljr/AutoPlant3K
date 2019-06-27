@@ -5,10 +5,6 @@ import autoplant.business.BusinessException;
 import autoplant.business.domain.Employee;
 import autoplant.ui.graphic.AutoPlantGraphicInterface;
 
-/**
- *
- * @author gbljunior
- */
 public class EmployeeLoginAction extends javax.swing.JFrame {
     
     private static final int COLUMNS = 10;
@@ -43,6 +39,7 @@ public class EmployeeLoginAction extends javax.swing.JFrame {
         cadastro = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Login");
 
         username.setBackground(new java.awt.Color(60, 120, 60));
         username.setForeground(new java.awt.Color(255, 255, 255));
@@ -69,7 +66,11 @@ public class EmployeeLoginAction extends javax.swing.JFrame {
         cadastro.setBackground(new java.awt.Color(30, 90, 30));
         cadastro.setForeground(new java.awt.Color(255, 255, 255));
         cadastro.setText("Cadastro");
-        cadastro.setEnabled(false);
+        cadastro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cadastroActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -119,6 +120,12 @@ public class EmployeeLoginAction extends javax.swing.JFrame {
             System.out.println(e.getMessage());
         }
     }//GEN-LAST:event_loginActionPerformed
+
+    private void cadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastroActionPerformed
+        CadastroAction action = new CadastroAction(accountManagementService);
+        action.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_cadastroActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

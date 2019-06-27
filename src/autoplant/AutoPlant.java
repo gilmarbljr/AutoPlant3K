@@ -7,10 +7,6 @@ import autoplant.business.impl.AccountManagementServiceImpl;
 import autoplant.business.impl.OperationServiceImpl;
 import autoplant.ui.graphic.AutoPlantGraphicInterface;
 
-/**
- *
- * @author gbljunior
- */
 public abstract class AutoPlant {
     public static final String TEXT_FLAG = "-t";
 

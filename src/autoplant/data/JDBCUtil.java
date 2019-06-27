@@ -1,9 +1,5 @@
 package autoplant.data;
 
-/**
- *
- * @author gbljunior
- */
 public class JDBCUtil {
     private static final JDBCEmployeeDAO EDAO = new JDBCEmployeeDAO();
     private static final JDBCPlantaDAO PDAO = new JDBCPlantaDAO();

@@ -2,10 +2,6 @@ package autoplant.business.domain;
 
 import autoplant.business.BusinessException;
 
-/**
- *
- * @author gbljunior
- */
 public class Planta {
     
     private final Float ZERO = Float.parseFloat("1");

@@ -7,10 +7,6 @@ import autoplant.business.domain.UnidadeDeCultivo;
 import autoplant.data.JDBCUtil;
 import java.util.List;
 
-/**
- *
- * @author gbljunior
- */
 public class OperationServiceImpl implements OperationService{
 
     @Override

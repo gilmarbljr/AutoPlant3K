@@ -2,10 +2,6 @@ package autoplant.business.domain;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author gbljunior
- */
 public class EstabilizadorAgua extends Observer{
     public static final String WATER = "Water";
     private ArrayList<Float> planoIrrigacao;

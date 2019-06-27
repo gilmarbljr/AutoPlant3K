@@ -1,9 +1,5 @@
 package autoplant.business.domain;
 
-/**
- *
- * @author gbljunior
- */
 public class Fertilizante {
     private String nome;
     private float concentracaoNitrogenio;

@@ -6,10 +6,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/**
- *
- * @author gbljunior
- */
 public abstract class JDBC {
     private Connection connection;
     private ResultSet resultSet;

@@ -2,10 +2,6 @@ package autoplant.business.domain;
 
 import java.util.LinkedList;
 
-/**
- *
- * @author gbljunior
- */
 public class EstabilizadorNutrientes extends Observer{
     
     public static final String NUTRIENT = "Nutrient";

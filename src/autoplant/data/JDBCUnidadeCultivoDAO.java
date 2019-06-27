@@ -9,10 +9,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author gbljunior
- */
 public class JDBCUnidadeCultivoDAO extends JDBC{
     
     public void save(UnidadeDeCultivo unidadeDeCultivo, Integer plantaId) throws BusinessException{

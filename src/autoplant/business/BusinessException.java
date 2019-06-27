@@ -1,9 +1,5 @@
 package autoplant.business;
 
-/**
- *
- * @author gbljunior
- */
 public class BusinessException extends Exception{
     
     public BusinessException(final String message) {

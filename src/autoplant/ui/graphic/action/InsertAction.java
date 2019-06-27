@@ -3,10 +3,6 @@ package autoplant.ui.graphic.action;
 import autoplant.business.OperationService;
 import autoplant.business.domain.UnidadeDeCultivo;
 
-/**
- *
- * @author gbljunior
- */
 public class InsertAction extends javax.swing.JFrame {
     
     private final OperationService operationService;
@@ -58,6 +54,7 @@ public class InsertAction extends javax.swing.JFrame {
         confirm = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Ajustar Cultivo");
 
         jLIdentificacao.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLIdentificacao.setText("Identificação");

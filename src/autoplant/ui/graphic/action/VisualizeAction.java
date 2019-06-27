@@ -2,10 +2,6 @@ package autoplant.ui.graphic.action;
 
 import autoplant.business.domain.UnidadeDeCultivo;
 
-/**
- *
- * @author gbljunior
- */
 public class VisualizeAction extends javax.swing.JFrame {
 
     private final UnidadeDeCultivo uc;
@@ -53,6 +49,7 @@ public class VisualizeAction extends javax.swing.JFrame {
         jLTN = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Unidade de Cultivo");
 
         nomeCultivo.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         nomeCultivo.setText("Nome do Cultivo");

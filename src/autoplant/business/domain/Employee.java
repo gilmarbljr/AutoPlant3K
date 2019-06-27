@@ -2,10 +2,6 @@ package autoplant.business.domain;
 
 import java.sql.Date;
 
-/**
- *
- * @author gbljunior
- */
 public class Employee extends User implements Credentials{
     
     private String username;

@@ -6,10 +6,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-/**
- *
- * @author gbljunior
- */
 public class JDBCPlantaDAO extends JDBC {
     
     public void salva(Planta planta) throws BusinessException{

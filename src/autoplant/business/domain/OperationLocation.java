@@ -1,9 +1,5 @@
 package autoplant.business.domain;
 
-/**
- *
- * @author gbljunior
- */
 public class OperationLocation {
     private Long number;
     private String name;

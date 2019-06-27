@@ -4,10 +4,6 @@ import autoplant.business.OperationService;
 import autoplant.business.domain.UnidadeDeCultivo;
 import javax.swing.DefaultListModel;
 
-/**
- *
- * @author gbljunior
- */
 public class EditAction extends javax.swing.JFrame {
     
     private final OperationService operationService;
@@ -38,6 +34,7 @@ public class EditAction extends javax.swing.JFrame {
         alterar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Ajustar Cultivos");
 
         listCultivos.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };

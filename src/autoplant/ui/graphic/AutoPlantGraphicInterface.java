@@ -9,10 +9,6 @@ import autoplant.ui.graphic.action.EditAction;
 import autoplant.ui.graphic.action.EmployeeLoginAction;
 import autoplant.ui.graphic.action.InsertAction;
 
-/**
- *
- * @author gbljunior
- */
 public class AutoPlantGraphicInterface extends javax.swing.JFrame {
     
     private final OperationLocation location;

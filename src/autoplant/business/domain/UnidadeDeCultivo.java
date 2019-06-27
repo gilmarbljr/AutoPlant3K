@@ -2,10 +2,6 @@ package autoplant.business.domain;
 
 import autoplant.business.BusinessException;
 
-/**
- *
- * @author gbljunior
- */
 public class UnidadeDeCultivo {
     private final Integer id;
     private String nomeCultivo;

@@ -8,10 +8,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author gbljunior
- */
 public class JDBCEmployeeDAO extends JDBC{
     
     public void salva(Employee employee) throws BusinessException{

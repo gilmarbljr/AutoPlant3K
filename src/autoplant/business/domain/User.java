@@ -2,10 +2,6 @@ package autoplant.business.domain;
 
 import java.sql.Date;
 
-/**
- *
- * @author gbljunior
- */
 public abstract class User {
     protected String firstName;
     protected String lastName;
